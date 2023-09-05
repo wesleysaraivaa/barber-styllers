@@ -1,0 +1,15 @@
+:root {
+    --white-color: #FFFF;
+    --black-color: #000000;
+    --background-color: #06121E;
+    --button-color: #D94140;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* font-family: 'Inter', sans-serif; */
