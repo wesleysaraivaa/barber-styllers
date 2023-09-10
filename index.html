@@ -4,120 +4,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title> Barbearia Styler's </title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
 
-    <header class="header">
-        <nav class="navbar">
-            <ul class="nav-menu">
-                <div class="header-icons">
-                    <i class="fa-brands fa-instagram fa-2x" style="color: #ffffff;"></i>
-                    <i class="fa-brands fa-facebook fa-2x" style="color: #ffffff;"></i>
-                    <i class="fa-brands fa-twitter fa-2x" style="color: #ffffff;"></i>
+    <div class="img-home">
+        <header>
+            <nav class="navbar-content container">
+
+                <div class="navbar-icons">
+                    <a href="#"> <i class="fa-brands fa-instagram fa-2x">
+                        </i> </a>
+                    <a href="#"> <i class="fa-brands fa-facebook fa-2x">
+                        </i> </a>
+                    <a href="#"> <i class="fa-brands fa-twitter fa-2x">
+                        </i> </a>
                 </div>
-                <div> <img src="/assets/img/logo.png" alt="Logo da Barbearia"> </div>
-                <button class="btn-menu"> Agendar horário </button>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-
-        <section class="capa">
-            <h1> ESTILO É UM REFLEXO DA SUA <br> ATITUDE E DA SUA PERSONALIDADE. </h1>
-            <p> Horário de funcionamento: 09:00 ás 19:00 de segunda à sábado </p>
-            <button class="btn-capa"> Agendar horário </button>
-        </section>
-
-        <section class="sobre">
-            <div class="sobre-content">
-                <div class="sobre-img">
-                    <img id="img1" src="/assets/img/sobre-2.png" alt="" width="310" height="192">
-                    <img id="img2" src="/assets/img/sobre-1.png" alt="" width="278" height="310">
-                    <img id="img3" src="/assets/img/sobre-3.png" alt="" width="229" height="255">
+                <div class="navbar-logo">
+                    <img src="/assets/img/LOGO.png" alt="Logo da Barbearia">
                 </div>
+
                 <div>
-                    <h1> SOBRE </h1>
-                    <p>
-                        A Barbearia Styler's foi criada para ser um diferencial no seguimento de Barbearia, seguimos a
-                        linha clássica onde a excelência no atendimento é primordial e o cliente é mais que um cliente,
-                        é um AMIGO! Pensando assim, criamos um ambiente de qualidade onde você pode reservar o seu
-                        horário e
-                        relaxar, ainda podendo degustar de uma deliciosa cerveja enquanto é atendido.
-                    </p>
+                    <a class="navbar-button" href="#"> Agendar horário </a>
                 </div>
-        </section>
+
+            </nav>
+
+            <main class="hero container">
+                <h1> ESTILO É UM REFLEXO DA SUA <br> ATITUDE E DA SUA PERSONALIDADE. </h1>
+                <p> Horário de funcionamento: 09:00 ás 19:00 de segunda à sábado </p>
+                <a href="#" class="btn-hero" target="_blank"> Agendar horário </a>
+            </main>
+
+        </header>
+    </div>
+
+    <section class="about">
+        <div class="about-content container">
+            <div class="about-img">
+                <img src="/assets/img/about.jpg" alt="Nossa Equipe">
+            </div>
+            <div>
+                <h2> SOBRE </h2>
+                <p>
+                    A Barbearia Styler's foi criada para ser um diferencial no seguimento de Barbearia, seguimos a
+                    linha clássica onde a excelência no atendimento é primordial e o cliente é mais que um cliente,
+                    é um AMIGO! Pensando assim, criamos um ambiente de qualidade onde você pode reservar o seu
+                    horário e relaxar, ainda podendo degustar de uma deliciosa cerveja enquanto é atendido.
+                </p>
+            </div>
         </div>
+    </section>
 
 
-        <section class="serviços">
+    <section class="services">
 
-            <h1> Serviços </h1>
+        <div class="container">
+            <h2> Serviços </h2>
             <p> Nossos serviços valorizam homens que procuram um ambiente confortável, em uma atmosfera vintage,
                 buscando não somente um corte bem feito, como uma experiência única e descontraída!
             </p>
+        </div>
 
-            <div class="serviços-img">
+        <section class="type-services">
 
-                <div class="serviços-box">
-                    <img src="/assets/img/servicos-1.png" alt="">
-                    <div class="serviços-box-valores">
-                        <h2> Cabelo </h2>
-                        <button class="btn-servicos"> R$ 45,00 </button>
-                    </div>
+            <div class="services-box">
+                <img src="/assets/img/servicos-1.png" alt="Corte Normal">
+                <div class="services-info">
+                    <h3> Cabelo </h3>
+                    <button> R$ 45,00 </button>
                 </div>
+            </div>
 
-                <div class="serviços-box">
-                    <img src="/assets/img/servicos-2.png" alt="">
-                    <div class="serviços-box-valores">
-                        <h2> Barba </h2>
-                        <button class="btn-servicos"> R$ 35,00 </button>
-                    </div>
+            <div class="services-box">
+                <img src="/assets/img/servicos-2.png" alt="">
+                <div class="services-info">
+                    <h3> Barba </h3>
+                    <button> R$ 35,00 </button>
                 </div>
+            </div>
 
-                <div class="serviços-box">
-                    <img src="/assets/img/servicos-3.png" alt="">
-                    <div class="serviços-box-valores">
-                        <h2> Cabelo e barba </h2>
-                        <button class="btn-servicos"> R$ 35,00 </button>
-                    </div>
+            <div class="services-box">
+                <img src="/assets/img/servicos-3.png" alt="">
+                <div class="services-info">
+                    <h3> Cabelo e barba </h3>
+                    <button> R$ 35,00 </button>
                 </div>
-
             </div>
 
         </section>
 
-        <section class="localização">
-            <h1> Venha nos conhecer </h1>
+    </section>
 
-            <div class="mapa">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31846.203111858777!2d-40.91607555!3d-3.8583155999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x794cafdd32b85c7%3A0x8e3e7934ecdafc1!2sUbajara%2C%20CE%2C%2062350-000!5e0!3m2!1spt-BR!2sbr!4v1693877777940!5m2!1spt-BR!2sbr"
-                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        </section>
+    <section class="localization">
+        <h1> Venha nos conhecer </h1>
 
-        <footer class="footer">
-            <div class="fa-2x">
-                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
-                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
-            </div>
-            <a class="footer-logo" href="/"> <img src="/assets/img/logo.png" alt=""> </a>
-            <h2> Copyright© 2023 | Wesley Saraiva - Todos os direitos reservados. </h2>
-        </footer>
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31846.203111858777!2d-40.91607555!3d-3.8583155999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x794cafdd32b85c7%3A0x8e3e7934ecdafc1!2sUbajara%2C%20CE%2C%2062350-000!5e0!3m2!1spt-BR!2sbr!4v1693877777940!5m2!1spt-BR!2sbr"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
 
-    </main>
+    <footer class="footer">
+        <div class="footer-icons">
+            <a href="#"> <i class="fa-brands fa-instagram fa-2x">
+                </i> </a>
+            <a href="#"> <i class="fa-brands fa-facebook fa-2x">
+                </i> </a>
+            <a href="#"> <i class="fa-brands fa-twitter fa-2x">
+                </i> </a>
+        </div>
+        <div>
+            <img src="/assets/img/logo.png" alt="Logo Barbearia">
+        </div>
 
+        <p> Copyright© 2023 | Wesley Saraiva - Todos os direitos reservados. </p>
+    </footer>
+
+    <a href="#" class="btn-whatsapp" target="_blank">
+        <img src="/assets/img/whatsapp.svg" alt="Botao whatsapp">
+    </a>
+
+
+    <script src="/assets/js/scrpt.js"></script>
 </body>
 
 </html>

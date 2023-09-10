@@ -1,0 +1,93 @@
+.img-home {
+    position: relative;
+}
+
+.img-home::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: linear-gradient(to bottom, rgba(6, 28, 30, 0.1), #06121E), url(/assets/img/HOME.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 0.5;
+}
+
+.hero {
+    color: var(--white-color);
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+}
+
+.hero h1 {
+    text-align: center;
+    line-height: 150%;
+    max-width: 940px;
+    font-size: 45px;
+}
+
+.hero p {
+    text-align: center;
+    margin: 14px 0;
+}
+
+.btn-hero {
+    padding: 14px 28px;
+    color: var(--white-color);
+    background-color: var(--red-color);
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 14px 0;
+}
+
+.btn-hero:hover {
+    animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        padding-top: 0;
+        min-width: 50vh;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        padding: 0 14px;
+        width: 100%;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+}
